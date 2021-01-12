@@ -21,9 +21,12 @@ extern crate amplify;
 extern crate quote;
 #[macro_use]
 extern crate syn;
+extern crate proc_macro;
 
 use core::convert::TryFrom;
-use syn::export::{Span, ToTokens, TokenStream, TokenStream2};
+use proc_macro2::{Span, TokenStream as TokenStream2};
+use quote::ToTokens;
+use proc_macro::TokenStream;
 use syn::spanned::Spanned;
 use syn::{
     Attribute, Data, DataEnum, DataStruct, DeriveInput, Error, Field, Fields,
