@@ -40,7 +40,7 @@ amplify_derive = "2.4.3"
 strict_encoding = { version = "1", features = ["miniscript"] }
 strict_encoding_derive = { version = "1" }
 client_side_validation = { version = "0.3" }
-descriptor-wallet = "0.3"
+descriptor-wallet = { git = "https://github.com/claudiosdc/descriptor-wallet.git", branch = "v0.3.5_descriptor_fix" }
 # Dependencies on core rust-bitcoin ecosystem projects
 # ----------------------------------------------------
 bitcoin = { version = "~0.26.0", features = ["rand"] }
